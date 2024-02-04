@@ -1,0 +1,17 @@
+return:
+	cooperate - return c
+	defect - return d
+	random - return c with 50% probability or d with 50% probability
+	repeat - return the previous decision
+	switch - return a different decision from the previous one
+
+conditions:
+	cooperate - if at least one cooperated
+	cooperate_all - if everyone cooperated
+
+	defect - if at least one defected
+	defect_all - if everyone defected
+
+	successful_round - if scored the most points in the previous round
+	neutral_round - if didn't score the most points and didn't score the fewest points in the 			previous round
+	unsuccessful_round - if scored the fewest points in the previous round

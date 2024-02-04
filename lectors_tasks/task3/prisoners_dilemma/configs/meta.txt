@@ -1,0 +1,27 @@
+meta_strategy:
+	- strategies:
+		- name: all_c
+		  probability: 0.5
+		- name: all_d
+		  probability: 0.3
+		- name: random
+		  probability: 0.2
+
+strategies:
+	- name: all_c
+	  initial_decision: cooperate
+          behavior:
+		cooperate: cooperate
+		defect: cooperate
+
+	- name: all_d
+	  initial_decision: defect
+          behavior:
+		cooperate: defect
+		defect: defect
+
+	- name: random
+	  initial_decision: random
+          behavior:
+		cooperate: random
+		defect: random

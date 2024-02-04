@@ -1,0 +1,6 @@
+strategy:
+	- initial_decision: cooperate
+	  behavior:
+		successful_round: repeat
+		neutral_round: repeat
+		unsuccessful_round: switch

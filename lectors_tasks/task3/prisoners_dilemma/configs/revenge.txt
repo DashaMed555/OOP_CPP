@@ -1,0 +1,6 @@
+strategy:
+	- initial_decision: cooperate
+	  behavior:
+		defect: defect
+		unsuccessful_round: cooperate
+		successful_round: defect
